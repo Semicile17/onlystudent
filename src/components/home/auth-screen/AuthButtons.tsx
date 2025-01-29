@@ -8,7 +8,7 @@ import { LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs";
 function AuthButtons() {
     const [loading,setLoading]=useState(false);
   return (
-    <div className="flex gap-3 flex-1 md:flex-row flex-col">
+    <div className="flex gap-3 flex-1 md:flex-row flex-col p-3">
       <RegisterLink className="flex-1" onClick={()=>{setLoading(true)}}>
         <Button className="w-full" variant={"outline"} disabled={loading}>
           Sign up

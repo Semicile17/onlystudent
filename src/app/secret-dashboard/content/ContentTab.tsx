@@ -124,6 +124,10 @@ const ContentTab = () => {
                     variant={"outline"}
                     type="button"
                     className="w-full mt-4"
+                    onTouchEnd={(e) => {
+                      e.preventDefault(); // Prevent default behavior that may interfere
+                      open();
+                    }}
                     onClick={() => open()}
                   >
                     Upload Media
