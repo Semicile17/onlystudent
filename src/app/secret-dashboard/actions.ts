@@ -66,7 +66,7 @@ export async function addNewProductAction({ name, image, price }: ProductArgs) {
     throw new Error("Please provide all required fields");
   }
 
-  const priceInNum = Math.round(parseFloat(price) * 100);
+  const priceInNum = Math.round(parseFloat(price));
 
   if (isNaN(priceInNum)) {
     throw new Error("Price must be a number");

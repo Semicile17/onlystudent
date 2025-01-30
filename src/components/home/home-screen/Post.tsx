@@ -231,7 +231,7 @@ const Post = ({
         <div className="flex gap-1 items-center">
           <Dialog>
             <DialogTrigger>
-              <MessageCircle className="w-5 h-5 cursor-pointer" onClick={()=>{console.log("hello")}} />
+              <MessageCircle className="w-5 h-5 cursor-pointer" />
          
             </DialogTrigger>
           
@@ -239,7 +239,7 @@ const Post = ({
                 <DialogHeader>
                   <DialogTitle>Comments</DialogTitle>
                 </DialogHeader>
-                <ScrollArea className="h-[400px] w-[350px] rounded-md p-4">
+                <ScrollArea className="h-[400px] w-full rounded-md p">
                   {post.comments.map((comment) => (
                     <Comment key={comment.id} comment={comment} />
                   ))}
@@ -256,6 +256,7 @@ const Post = ({
                     placeholder="Add a comment"
                     onChange={(e) => setComment(e.target.value)}
                     value={comment}
+                    className=""
                   />
 
                   <DialogFooter>
