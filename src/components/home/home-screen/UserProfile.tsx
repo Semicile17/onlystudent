@@ -49,7 +49,7 @@ const UserProfile=async()=> {
         <div className="flex flex-col mt-4">
             <p className="text-lg font-semibold">{admin?.name}</p>
             <p className="text-sm mt-2 md:text-md">
-              Hello there . Discover new ways to learn higher mathematics . Special videos and exclusive content .Subscribe now to gain access.
+              Hello there . Discover new ways to connect to music . Special videos and exclusive content .Subscribe now to gain access.
             </p>
 
         </div>
